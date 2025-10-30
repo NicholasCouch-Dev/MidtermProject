@@ -3,7 +3,7 @@
  * Instructor: Jim Eberle
  * Homework# : Midterm Project
  * Date: 10/05/2025
- * Class: Midterm
+ * Class: Midterm Project
  * @author: Nicholas Couch
  * Description: Midterm Programming Project
  */
