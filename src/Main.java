@@ -78,13 +78,13 @@ public class Main {
             }
          }
          // Here we set up our sentinel value so the player can continue if they would like to or quit.//
-         System.out.print("Would you like to play again? (y/n): ");
-         String playerAnswer = input.nextLine();
-         if (playerAnswer.equalsIgnoreCase("y")) {
-            playAgain = true;
-         } else {
-            playAgain = false;
-         }
+         String playerAnswer;
+         do {
+            System.out.print("Would you like to play again? (y/n): ");
+            playerAnswer = input.nextLine().trim().toLowerCase();
+         } while (!playerAnswer.equals("y") && !playerAnswer.equals("n"));
+
+            playAgain = playerAnswer.equals("y");
       }
       //This is our logic for the stats screen at the end of the game
       System.out.println("Game over! Here is your stats: ");
