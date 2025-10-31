@@ -1,32 +1,98 @@
-# 🎲 A Game of Craps (Java Console Version)  
+# 🎲 A Game of Craps (Java Console Version)
 **Author:** Nicholas Couch  
-**Portfolio / Repo:** `MidtermProject`  
 **Date:** 10/05/2025  
+**IDE:** IntelliJ IDEA 2025.2  
+**Language:** Java 24 (JDK 24.0.2)  
 
-## Overview  
-This is a console-based Java implementation of the classic casino game *Craps*. It was built as part of a Java programming midterm project and showcases core programming concepts such as loops, methods, arrays (well: dice logic), user input, and game logic.  
-It also demonstrates a transition into software engineering—highlighting object-oriented design, code readability, and maintainability.
+---
 
-## Features  
-- Simulates rolling two six-sided dice and summing them  
-- Recognizes “Craps” (2, 3, 12) and “Natural” (7, 11) on first roll  
-- Establishes a “point” when neither happens, and the player continues rolling until hitting the point (win) or rolling a 7 (loss)  
-- Tracks **Wins**, **Double Wins** (when two dice match and equal the point), and **Losses**  
-- Allows replaying multiple rounds and displays final session statistics including win rate  
+## 📘 Overview
+This project is a console-based Java implementation of the classic **casino dice game, Craps**.  
+It was created as a **Midterm Project** for CSC 1060 and demonstrates key programming concepts like:
+- Loops and conditionals
+- Methods and functions
+- Random number generation
+- User input handling
+- Object-oriented design principles
 
-## Technologies  
-- Java 24 (JDK 24.x)  
-- IntelliJ IDEA 2025.2  
-- Standard Java libraries (java.util.Scanner, java.util.Random)  
-- Console / terminal-based I/O  
+---
 
-## Getting Started  
-### Prerequisites  
-- Java JDK installed (version 24 or compatible)  
-- Git (to clone the repo)  
-- (Optional) IntelliJ IDEA for development  
+## 🧠 How to Run in IntelliJ IDEA
 
-### Installation & Running  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/NicholasCouch-Dev/MidtermProject.git
+1. **Open IntelliJ IDEA.**
+2. Go to **File → Open...** and select your project folder (`MidtermProject_Professional` or `MidtermProject`).
+3. Wait for IntelliJ to index the project.
+4. In the **Project view**, expand the `src` folder and locate `Main.java`.
+5. Right-click `Main.java` → **Run 'Main.main()'**.
+6. Follow the prompts in the console to play.
+
+---
+
+## 🎮 Gameplay Instructions
+- The game simulates rolling two dice.
+- If the sum is 7 or 11 → you win!
+- If the sum is 2, 3, or 12 → you lose (Craps).
+- Any other number becomes the “point.” You must roll that same number again before rolling a 7 to win.
+- Rolling doubles matching the point grants a **Double Win** bonus.
+- After each round, you can choose to play again or exit.
+
+---
+
+## 📊 Statistics
+At the end of each session, the game displays:
+- Total Wins  
+- Double Wins  
+- Losses  
+- Win Rate %  
+
+Example Output:
+```
+===== GAME STATS =====
+Player: Nicholas
+Wins: 4
+Double Wins: 1
+Losses: 3
+Win Rate: 57.14%
+======================
+```
+
+---
+
+## 🧩 File Structure
+```
+MidtermProject/
+ ├── src/
+ │    ├── Main.java
+ │    ├── CrapsGame.java
+ │    ├── Player.java
+ │    └── Dice.java
+ ├── README.md
+ └── .gitignore
+```
+
+---
+
+## 🚀 Future Enhancements
+- Add a betting system with virtual credits.
+- Save player stats between sessions using file I/O.
+- Develop a GUI version using JavaFX.
+- Write JUnit tests for game logic verification.
+
+---
+
+## 🛠️ Version Control (GitHub Workflow)
+1. Stage all changes:  
+   `git add .`
+2. Commit your work:  
+   `git commit -m "Refactor: added OOP structure and README"`
+3. Push to GitHub:  
+   `git push origin main`
+4. View your project online:  
+   [https://github.com/NicholasCouch-Dev/MidtermProject](https://github.com/NicholasCouch-Dev/MidtermProject)
+
+---
+
+## 🏁 Credits
+Created by **Nicholas Couch**  
+CSC 1060 – Instructor: Jim Eberle  
+Midterm Project, 2025  
