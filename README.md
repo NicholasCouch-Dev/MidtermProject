@@ -80,18 +80,6 @@ MidtermProject/
 
 ---
 
-## 🛠️ Version Control (GitHub Workflow)
-1. Stage all changes:  
-   `git add .`
-2. Commit your work:  
-   `git commit -m "Refactor: added OOP structure and README"`
-3. Push to GitHub:  
-   `git push origin main`
-4. View your project online:  
-   [https://github.com/NicholasCouch-Dev/MidtermProject](https://github.com/NicholasCouch-Dev/MidtermProject)
-
----
-
 ## 🏁 Credits
 Created by **Nicholas Couch**  
 CSC 1060 – Instructor: Jim Eberle  
