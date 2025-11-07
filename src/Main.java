@@ -27,7 +27,7 @@ public class Main {
       boolean playAgain = true;
 
       System.out.println("Welcome to A Game of Craps " + playerName + "!");
-      // Here we set up our logic for hour our craps game works//
+      // Here we set up our logic for how our craps game works//
       while (playAgain) {
          int dice1 = diceRoll(rand);
          int dice2 = diceRoll(rand);
